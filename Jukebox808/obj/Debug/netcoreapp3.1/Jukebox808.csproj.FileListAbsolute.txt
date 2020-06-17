@@ -108,3 +108,12 @@ C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Ju
 C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Jukebox808.dll
 C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Jukebox808.pdb
 C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Jukebox808.genruntimeconfig.cache
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Operations\CREATE.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Operations\DELETE.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Operations\DETAILS.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Operations\EDIT.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Squad\CREATE.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Squad\DELETE.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Squad\DETAILS.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Squad\EDIT.cshtml.g.cs
+C:\Users\Cheeseman\source\repos\Jukebox808\Jukebox808\obj\Debug\netcoreapp3.1\Razor\Views\Squad\Squad.cshtml.g.cs
