@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Jukebox808.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -46,7 +47,7 @@ namespace Mowerman.Models
         public IdentityUser IdentityUser { get; set; }
 
         [NotMapped]
-        public IEnumerable<Customer> Customers { get; set; }
+        public IEnumerable<User> Customers { get; set; }
         public IEnumerable<Squad> Employees { get; set; }
     }
 }

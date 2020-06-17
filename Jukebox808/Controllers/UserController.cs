@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Jukebox808.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Jukebox808.Controllers
 {
     public class UserController : Controller
     {
         // GET: User
-        {
-         private readonly ApplicationDbContext _context;
-
+        
+          private readonly ApplicationDbContext _context;
+        
         public UserController(ApplicationDbContext context)
         {
             _context = context;
@@ -67,15 +69,15 @@ namespace Jukebox808.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,MowDay,Address,ZipCode,IdentityUserId,MowDay")] Customer customer)
+        public IActionResult Create([Bind("Id,Name,MowDay,Address,ZipCode,IdentityUserId,MowDay")] User user)
         {
             //if (ModelState.IsValid)
             //{
             //if (customer.Id == 0)
             //{
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            customer.IdentityUserId = userId;
-            _context.Customers.Add(customer);
+            user.IdentityUserId = userId;
+            _context.Customers.Add(user);
             //}
             //else
             //{
@@ -100,12 +102,12 @@ namespace Jukebox808.Controllers
                 return NotFound();
             }
 
-            var customer = await _context.Customers.FindAsync(id);
-            if (customer == null)
+            var user = await _context.Customers.FindAsync(id);
+            if (user == null)
             {
                 return NotFound();
             }
-            ViewData["IdentityUserId"] = new SelectList(_context.Users, "Id", "Id", customer.IdentityUserId);
+            ViewData["IdentityUserId"] = new SelectList(_context.Users, "Id", "Id", user.IdentityUserId);
             return View(user);
         }
 
@@ -131,7 +133,7 @@ namespace Jukebox808.Controllers
                     userInDB.ZipCode = customer.ZipCode;
                     userInDB.MowDay = customer.MowDay;
                     userInDB.ExtraMowDay = customer.ExtraMowDay;
-                    userInDB.StartDate = customer.StartDate;
+                    userInDB.StartDate = customer.StartDate; 
                     userInDB.EndDate = customer.EndDate;
                     //_context.Update(customer);
                     await _context.SaveChangesAsync();
