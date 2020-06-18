@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Jukebox808.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -16,8 +17,8 @@ namespace Mowerman.Data
         {
         }
 
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Squad> Squads { get; set; }
         public DbSet<Operation> Operations { get; set; }
 
         public DbSet<TimeClock> TimeClock { get; set; }
